@@ -3,7 +3,7 @@
 
 'use strict'
 
-import flog from "./flog.mjs";
+import flog from "./src/flog.mjs";
 
 const goodCallback = (something1 = 12345678, something2 = 'AAAbbbCCCdddEEEfffGGG') => {
   something1.toString();

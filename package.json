@@ -5,7 +5,7 @@
   "main": "src/flog.mjs",
   "type": "module",
   "scripts": {
-    "test": "node src/example.js"
+    "test": "node example.js"
   },
   "keywords": [
     "log",
