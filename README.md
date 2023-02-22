@@ -1,2 +1,5 @@
 # flog
-logging and debugging in JavaScript made easier
+
+Logging and debugging made easier for your JavaScript applications.
+
+***
