@@ -1,0 +1,18 @@
+{
+  "name": "flog",
+  "version": "0.0.1",
+  "description": "a simple debugging library",
+  "main": "src/flog.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "node src/example.js"
+  },
+  "keywords": [
+    "log",
+    "debugging",
+    "logging",
+    "flog"
+  ],
+  "author": "otvv",
+  "license": "MIT"
+}
