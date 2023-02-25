@@ -1,8 +1,8 @@
 {
   "name": "flog",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a simple debugging library",
-  "main": "src/flog.mjs",
+  "main": "lib/flog.mjs",
   "type": "module",
   "scripts": {
     "test": "node example.js"
