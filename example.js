@@ -32,7 +32,7 @@ const testVariable = 123456;
   // get the typeof something
   {
     flog.type(goodCallback);
-    flog.type(badCallback);
+    // flog.type(badCallback);
     flog.type(testVariable);
   }
   // tcf wrapper
@@ -40,10 +40,11 @@ const testVariable = 123456;
     // good callback without debug logs
     flog.run(goodCallback);
 
-    // bad callback with debug logs
-    flog.run(badCallback, true);
-
-    // bad callback with debug logs and if its throwable
-    flog.run(badCallback, true, true);
+    // bad callback with debug logs and if its throwable or not
+    // flog.run(badCallback, true, true); // thats part is commented out to avoid the 'test run' from being stopped
   }
+
+  // throw examples
+  flog.throw('throw error message', '+', 'error', true); // this is a fake throw, the application won't stop
+  flog.throw('throw fatal error message', '+', 'fatal'); // the 'test run' will stop here.
 })();
