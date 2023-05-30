@@ -3,10 +3,10 @@
 
 'use strict'
 
-import flog from "./lib/flog.mjs";
+import flog from './lib/flog.mjs';
 
 /*
- This is a good callback (will not throw an exception, all methods called inside it exists inside JavaScript)
+ This is a good callback example (will not throw an exception, all methods called inside it exists inside JavaScript):
 */
 const goodCallback = (something1 = 12345678, something2 = 'AAAbbbCCCdddEEEfffGGG') => {
   something1.toString();
@@ -14,18 +14,21 @@ const goodCallback = (something1 = 12345678, something2 = 'AAAbbbCCCdddEEEfffGGG
 };
 
 /*
- This is a bad callback (will certainly cause an exception, the method called inside it does not exist inside JavaScript)
+ This is a bad callback example (will certainly cause an exception, the method called inside it does not exist inside JavaScript):
 */
 const badCallback = (something1) => {
   something1.unknownFunction();
 };
 
+/*
+ Some constant variables:
+*/
 const variable1 = 123456;
 const variable2 = '123456';
 
 (() => {
   /*
-   Log messages example
+   Log messages example:
   */
   flog.print('test message', '+');
   flog.print('test message', '+', 'success');
@@ -46,7 +49,7 @@ const variable2 = '123456';
   }
 
   /*
-   Get the type of anything
+   Get the type of anything:
   */
   {
     flog.type(goodCallback); // should return `function`
@@ -67,12 +70,12 @@ const variable2 = '123456';
 
     // flog will execute a bad callback with debug logs and if it will thrown an exception or not
 
-    // Uncomment the line above if you want to see how flog handles bad callbacks.
+    // Uncomment the line below if you want to see how flog handles bad callbacks.
     // flog.execute(badCallback, true, true);
   }
 
   /*
-   Throw examples
+   Throw examples:
   */
   flog.throw('throw error message', '+', 'error', true); // this is a fake throw, the application won't stop
   flog.throw('throw fatal error message', '+', 'fatal'); // the 'test run' will stop here.
