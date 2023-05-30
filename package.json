@@ -1,7 +1,7 @@
 {
   "name": "flog",
-  "version": "0.0.4",
-  "description": "a simple debugging library",
+  "version": "0.0.6",
+  "description": "a simple debugging library for JavaScript",
   "main": "lib/flog.mjs",
   "type": "module",
   "scripts": {
