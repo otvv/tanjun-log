@@ -1,8 +1,8 @@
 {
-  "name": "flog",
-  "version": "0.0.6",
-  "description": "a simple debugging library for JavaScript",
-  "main": "lib/flog.mjs",
+  "name": "flogger",
+  "version": "0.0.7",
+  "description": "a simple debugging and logging library for JavaScript",
+  "main": "lib/flogger.mjs",
   "type": "module",
   "scripts": {
     "test": "node example.js"
@@ -11,7 +11,7 @@
     "log",
     "debugging",
     "logging",
-    "flog"
+    "flogger"
   ],
   "author": "otvv",
   "license": "MIT"
