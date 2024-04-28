@@ -30,12 +30,12 @@ const variable2 = '123456';
   /*
    Log messages example:
   */
-  flogger.print('test message', '+');
-  flogger.print('test message', '+', 'success');
-  flogger.print('test message', '+', 'fatal');
-  flogger.print('test message', '+', 'error');
-  flogger.print('test message', '+', 'warning');
-  flogger.print('test message', '+', 'info');
+   flogger.print('test message', '+');
+   flogger.print('test message', '+', 'success');
+   flogger.print('test message', '+', 'fatal');
+   flogger.print('test message', '+', 'error');
+   flogger.print('test message', '+', 'warning');
+   flogger.print('test message', '+', 'info');
 
   /*
    Get function/callback trace or function/callback callee information:
@@ -77,6 +77,6 @@ const variable2 = '123456';
   /*
    Throw examples:
   */
-  flogger.throw('throw error message', '+', 'error', true); // this is a fake throw, the application won't stop
-  flogger.throw('throw fatal error message', '+', 'fatal'); // the 'test run' will stop here.
+   flogger.throw('throw error message', '+', 'error', true); // this is a fake throw, the application won't stop
+   flogger.throw('throw fatal error message', '+', 'fatal'); // the 'test run' will stop here.
 })();

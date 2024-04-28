@@ -1,5 +1,5 @@
 {
-  "name": "flogger",
+  "name": "f-logger",
   "version": "0.0.7",
   "description": "a simple debugging and logging library for JavaScript",
   "main": "lib/flogger.mjs",
@@ -9,6 +9,7 @@
   },
   "keywords": [
     "log",
+    "logger",
     "debugging",
     "logging",
     "flogger"
