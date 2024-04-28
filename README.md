@@ -1,4 +1,4 @@
-# slog :sloth:
+# f-logger :keyboard:
 
 Logging and debugging made easier for your JavaScript applications.
 
