@@ -1,8 +1,8 @@
 {
-  "name": "f-logger",
+  "name": "tanjun-log",
   "version": "0.0.7",
   "description": "a simple debugging and logging library for JavaScript",
-  "main": "lib/flogger.mjs",
+  "main": "lib/tanjun.mjs",
   "type": "module",
   "scripts": {
     "test": "node example.js"
@@ -12,7 +12,8 @@
     "logger",
     "debugging",
     "logging",
-    "flogger"
+    "tanjun",
+    "simple"
   ],
   "author": "otvv",
   "license": "MIT"

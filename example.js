@@ -3,7 +3,7 @@
 
 'use strict'
 
-import flogger from './lib/flogger.mjs';
+import tanjun from './lib/tanjun.mjs';
 
 /*
  This is a good callback example (will not throw an exception, all methods called inside it exists inside JavaScript):
@@ -30,12 +30,12 @@ const variable2 = '123456';
   /*
    Log messages example:
   */
-   flogger.print('test message', '+');
-   flogger.print('test message', '+', 'success');
-   flogger.print('test message', '+', 'fatal');
-   flogger.print('test message', '+', 'error');
-   flogger.print('test message', '+', 'warning');
-   flogger.print('test message', '+', 'info');
+   tanjun.print('test message', '+');
+   tanjun.print('test message', '+', 'success');
+   tanjun.print('test message', '+', 'fatal');
+   tanjun.print('test message', '+', 'error');
+   tanjun.print('test message', '+', 'warning');
+   tanjun.print('test message', '+', 'info');
 
   /*
    Get function/callback trace or function/callback callee information:
@@ -44,39 +44,39 @@ const variable2 = '123456';
     goodCallback();
     /* If you are going to use one of these 2 functions, make sure to call them after your callback 
     or function that you want to trace. */
-    flogger.trace();
-    flogger.callee();
+    tanjun.trace();
+    tanjun.callee();
   }
 
   /*
    Get the type of anything:
   */
   {
-    flogger.type(goodCallback); // should return `function`
+    tanjun.type(goodCallback); // should return `function`
 
-    flogger.type(variable1); // should return `number`
-    flogger.type(variable2); // should return `string`
+    tanjun.type(variable1); // should return `number`
+    tanjun.type(variable2); // should return `string`
   }
 
   /*
    Function/callback runner:
    
-   You can safely execute a function that is not so safe here, flogger will handle the exceptions
+   You can safely execute a function that is not so safe here, tanjun will handle the exceptions
    or if you want to log debug info while executing a function.
   */
   {
-    // flogger will execute a good callback without debug logs
-    flogger.execute(goodCallback);
+    // tanjun will execute a good callback without debug logs
+    tanjun.execute(goodCallback);
 
-    // flogger will execute a bad callback with debug logs and if it will thrown an exception or not
+    // tanjun will execute a bad callback with debug logs and if it will thrown an exception or not
 
-    // Uncomment the line below if you want to see how flogger handles bad callbacks.
-    // flogger.execute(badCallback, true, true);
+    // Uncomment the line below if you want to see how tanjun handles bad callbacks.
+    // tanjun.execute(badCallback, true, true);
   }
 
   /*
    Throw examples:
   */
-   flogger.throw('throw error message', '+', 'error', true); // this is a fake throw, the application won't stop
-   flogger.throw('throw fatal error message', '+', 'fatal'); // the 'test run' will stop here.
+   tanjun.throw('throw error message', '+', 'error', true); // this is a fake throw, the application won't stop
+   tanjun.throw('throw fatal error message', '+', 'fatal'); // the 'test run' will stop here.
 })();
