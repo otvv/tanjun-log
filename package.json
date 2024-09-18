@@ -1,6 +1,6 @@
 {
   "name": "tanjun-log",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "a simple debugging and logging library for JavaScript",
   "main": "lib/tanjun.mjs",
   "type": "module",
@@ -15,6 +15,7 @@
     "tanjun",
     "simple"
   ],
+  "types": "lib/types/tanjun-log.d.ts",
   "author": "otvv",
   "license": "MIT"
 }

@@ -77,6 +77,6 @@ const variable2 = '123456';
   /*
    Throw examples:
   */
-   tanjun.throw('throw error message', '+', 'error', true); // this is a fake throw, the application won't stop
-   tanjun.throw('throw fatal error message', '+', 'fatal'); // the 'test run' will stop here.
+   tanjun.crash('throw error message', '+', 'error', true); // this is a fake throw, the application won't stop
+   tanjun.crash('throw fatal error message', '+', 'fatal'); // the 'test run' will stop here.
 })();
